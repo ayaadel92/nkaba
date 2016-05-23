@@ -1,0 +1,77 @@
+<%= form_for(@engineer) do |f| %>
+  <% if @engineer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@engineer.errors.count, "error") %> prohibited this engineer from being saved:</h2>
+
+      <ul>
+      <% @engineer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :membersh_number %><br>
+    <%= f.text_field :membersh_number %>
+  </div>
+  <div class="field">
+    <%= f.label :number_health_care %><br>
+    <%= f.text_field :number_health_care %>
+  </div>
+  <div class="field">
+    <%= f.label :national_id %><br>
+    <%= f.text_field :national_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :data_of_birth %><br>
+    <%= f.date_select :data_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :join_data %><br>
+    <%= f.date_select :join_data %>
+  </div>
+  <div class="field">
+    <%= f.label :graduation_year %><br>
+    <%= f.text_field :graduation_year %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_participants %><br>
+    <%= f.number_field :number_of_participants %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.number_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_card %><br>
+    <%= f.text_field :credit_card %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br>
+    <%= f.text_field :path %>
+  </div>
+  <div class="field">
+    <%= f.label :limit_id %><br>
+    <%= f.text_field :limit_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

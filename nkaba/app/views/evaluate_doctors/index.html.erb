@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Evaluate Doctors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Doctor</th>
+      <th>Membersh number</th>
+      <th>Rate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @evaluate_doctors.each do |evaluate_doctor| %>
+      <tr>
+        <td><%= evaluate_doctor.doctor %></td>
+        <td><%= evaluate_doctor.membersh_number %></td>
+        <td><%= evaluate_doctor.rate %></td>
+        <td><%= link_to 'Show', evaluate_doctor %></td>
+        <td><%= link_to 'Edit', edit_evaluate_doctor_path(evaluate_doctor) %></td>
+        <td><%= link_to 'Destroy', evaluate_doctor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Evaluate doctor', new_evaluate_doctor_path %>

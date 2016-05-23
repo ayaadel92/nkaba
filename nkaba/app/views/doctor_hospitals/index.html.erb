@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Doctor Hospitals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hospital</th>
+      <th>Doctor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doctor_hospitals.each do |doctor_hospital| %>
+      <tr>
+        <td><%= doctor_hospital.hospital %></td>
+        <td><%= doctor_hospital.doctor %></td>
+        <td><%= link_to 'Show', doctor_hospital %></td>
+        <td><%= link_to 'Edit', edit_doctor_hospital_path(doctor_hospital) %></td>
+        <td><%= link_to 'Destroy', doctor_hospital, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doctor hospital', new_doctor_hospital_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descriptions:</strong>
+  <%= @complaint.descriptions %>
+</p>
+
+<p>
+  <strong>Path of image:</strong>
+  <%= @complaint.path_of_image %>
+</p>
+
+<p>
+  <strong>Path of video:</strong>
+  <%= @complaint.path_of_video %>
+</p>
+
+<p>
+  <strong>Membersh number:</strong>
+  <%= @complaint.membersh_number %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @complaint.hospital %>
+</p>
+
+<p>
+  <strong>Lab:</strong>
+  <%= @complaint.lab %>
+</p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @complaint.doctor %>
+</p>
+
+<%= link_to 'Edit', edit_complaint_path(@complaint) %> |
+<%= link_to 'Back', complaints_path %>

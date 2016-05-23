@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transfer_id: 
+  test: MyString
+  test_id: 1
+
+two:
+  transfer_id: 
+  test: MyString
+  test_id: 1

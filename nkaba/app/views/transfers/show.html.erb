@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data of request:</strong>
+  <%= @transfer.data_of_request %>
+</p>
+
+<p>
+  <strong>Percentage shareholding:</strong>
+  <%= @transfer.percentage_shareholding %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @transfer.status %>
+</p>
+
+<p>
+  <strong>Total cost:</strong>
+  <%= @transfer.total_cost %>
+</p>
+
+<p>
+  <strong>Medicaldiagnosis:</strong>
+  <%= @transfer.medicaldiagnosis %>
+</p>
+
+<p>
+  <strong>Membersh number:</strong>
+  <%= @transfer.membersh_number %>
+</p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @transfer.doctor %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @transfer.hospital %>
+</p>
+
+<p>
+  <strong>Lab:</strong>
+  <%= @transfer.lab %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @transfer.type %>
+</p>
+
+<%= link_to 'Edit', edit_transfer_path(@transfer) %> |
+<%= link_to 'Back', transfers_path %>

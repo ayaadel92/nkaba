@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Remainder of total:</strong>
+  <%= @limit.remainder_of_total %>
+</p>
+
+<p>
+  <strong>Credit of surgeries:</strong>
+  <%= @limit.credit_of_surgeries %>
+</p>
+
+<p>
+  <strong>Credit medical tests rumors:</strong>
+  <%= @limit.credit_medical_tests_rumors %>
+</p>
+
+<%= link_to 'Edit', edit_limit_path(@limit) %> |
+<%= link_to 'Back', limits_path %>

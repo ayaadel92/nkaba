@@ -1,0 +1,45 @@
+<%= form_for(@complaint) do |f| %>
+  <% if @complaint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@complaint.errors.count, "error") %> prohibited this complaint from being saved:</h2>
+
+      <ul>
+      <% @complaint.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descriptions %><br>
+    <%= f.text_area :descriptions %>
+  </div>
+  <div class="field">
+    <%= f.label :path_of_image %><br>
+    <%= f.text_field :path_of_image %>
+  </div>
+  <div class="field">
+    <%= f.label :path_of_video %><br>
+    <%= f.text_field :path_of_video %>
+  </div>
+  <div class="field">
+    <%= f.label :membersh_number %><br>
+    <%= f.text_field :membersh_number %>
+  </div>
+  <div class="field">
+    <%= f.label :hospital_id %><br>
+    <%= f.text_field :hospital_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lab_id %><br>
+    <%= f.text_field :lab_id %>
+  </div>
+  <div class="field">
+    <%= f.label :doctor_id %><br>
+    <%= f.text_field :doctor_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descriptions: MyText
+  path_of_image: MyString
+  path_of_video: MyString
+  membersh_number: MyString
+  hospital_id: 
+  lab_id: 
+  doctor_id: 
+
+two:
+  descriptions: MyText
+  path_of_image: MyString
+  path_of_video: MyString
+  membersh_number: MyString
+  hospital_id: 
+  lab_id: 
+  doctor_id: 

@@ -1,0 +1,49 @@
+<%= form_for(@relative) do |f| %>
+  <% if @relative.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@relative.errors.count, "error") %> prohibited this relative from being saved:</h2>
+
+      <ul>
+      <% @relative.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number_health_care %><br>
+    <%= f.text_field :number_health_care %>
+  </div>
+  <div class="field">
+    <%= f.label :membersh_number %><br>
+    <%= f.text_field :membersh_number %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br>
+    <%= f.date_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.number_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :relation_type %><br>
+    <%= f.text_field :relation_type %>
+  </div>
+  <div class="field">
+    <%= f.label :national_id %><br>
+    <%= f.text_field :national_id %>
+  </div>
+  <div class="field">
+    <%= f.label :limit_id %><br>
+    <%= f.text_field :limit_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

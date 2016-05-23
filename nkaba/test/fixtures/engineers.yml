@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  membersh_number: MyString
+  number_health_care: MyString
+  national_id: MyString
+  name: MyString
+  address: MyString
+  phone_number: MyString
+  data_of_birth: 2016-05-23
+  join_data: 2016-05-23
+  graduation_year: MyString
+  number_of_participants: 1
+  gender: 1
+  credit_card: MyString
+  email: MyString
+  path: MyString
+  limit_id: 
+
+two:
+  membersh_number: MyString
+  number_health_care: MyString
+  national_id: MyString
+  name: MyString
+  address: MyString
+  phone_number: MyString
+  data_of_birth: 2016-05-23
+  join_data: 2016-05-23
+  graduation_year: MyString
+  number_of_participants: 1
+  gender: 1
+  credit_card: MyString
+  email: MyString
+  path: MyString
+  limit_id: 

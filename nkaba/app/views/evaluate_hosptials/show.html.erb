@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @evaluate_hosptial.hospital %>
+</p>
+
+<p>
+  <strong>Membersh number:</strong>
+  <%= @evaluate_hosptial.membersh_number %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @evaluate_hosptial.rate %>
+</p>
+
+<%= link_to 'Edit', edit_evaluate_hosptial_path(@evaluate_hosptial) %> |
+<%= link_to 'Back', evaluate_hosptials_path %>

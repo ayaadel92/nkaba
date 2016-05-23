@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number health care:</strong>
+  <%= @relative.number_health_care %>
+</p>
+
+<p>
+  <strong>Membersh number:</strong>
+  <%= @relative.membersh_number %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @relative.date_of_birth %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @relative.name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @relative.gender %>
+</p>
+
+<p>
+  <strong>Relation type:</strong>
+  <%= @relative.relation_type %>
+</p>
+
+<p>
+  <strong>National:</strong>
+  <%= @relative.national_id %>
+</p>
+
+<p>
+  <strong>Limit:</strong>
+  <%= @relative.limit %>
+</p>
+
+<%= link_to 'Edit', edit_relative_path(@relative) %> |
+<%= link_to 'Back', relatives_path %>

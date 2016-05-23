@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Limits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Remainder of total</th>
+      <th>Credit of surgeries</th>
+      <th>Credit medical tests rumors</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @limits.each do |limit| %>
+      <tr>
+        <td><%= limit.remainder_of_total %></td>
+        <td><%= limit.credit_of_surgeries %></td>
+        <td><%= limit.credit_medical_tests_rumors %></td>
+        <td><%= link_to 'Show', limit %></td>
+        <td><%= link_to 'Edit', edit_limit_path(limit) %></td>
+        <td><%= link_to 'Destroy', limit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Limit', new_limit_path %>

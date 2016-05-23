@@ -1,0 +1,57 @@
+<%= form_for(@transfer) do |f| %>
+  <% if @transfer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transfer.errors.count, "error") %> prohibited this transfer from being saved:</h2>
+
+      <ul>
+      <% @transfer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data_of_request %><br>
+    <%= f.date_select :data_of_request %>
+  </div>
+  <div class="field">
+    <%= f.label :percentage_shareholding %><br>
+    <%= f.number_field :percentage_shareholding %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :total_cost %><br>
+    <%= f.text_field :total_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :medicaldiagnosis %><br>
+    <%= f.text_area :medicaldiagnosis %>
+  </div>
+  <div class="field">
+    <%= f.label :membersh_number %><br>
+    <%= f.text_field :membersh_number %>
+  </div>
+  <div class="field">
+    <%= f.label :doctor_id %><br>
+    <%= f.text_field :doctor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hospital_id %><br>
+    <%= f.text_field :hospital_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lab_id %><br>
+    <%= f.text_field :lab_id %>
+  </div>
+  <div class="field">
+    <%= f.label :type_id %><br>
+    <%= f.text_field :type_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

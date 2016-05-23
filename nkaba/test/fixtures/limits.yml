@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  remainder_of_total: 1.5
+  credit_of_surgeries: 1.5
+  credit_medical_tests_rumors: MyString
+
+two:
+  remainder_of_total: 1.5
+  credit_of_surgeries: 1.5
+  credit_medical_tests_rumors: MyString

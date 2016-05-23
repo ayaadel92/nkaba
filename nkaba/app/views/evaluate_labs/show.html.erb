@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lab:</strong>
+  <%= @evaluate_lab.lab %>
+</p>
+
+<p>
+  <strong>Membersh number:</strong>
+  <%= @evaluate_lab.membersh_number %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @evaluate_lab.rate %>
+</p>
+
+<%= link_to 'Edit', edit_evaluate_lab_path(@evaluate_lab) %> |
+<%= link_to 'Back', evaluate_labs_path %>
